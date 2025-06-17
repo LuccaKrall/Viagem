@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roteiro de Viagem - Europa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', 'Source Sans Pro', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?q=80&w=2574&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .attraction-link {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .attraction-link:hover {
+            text-decoration: underline;
+        }
+        /* Estilos para a timeline lateral */
+        .timeline-nav {
+            position: fixed;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            display: none; /* Escondido por padrão */
+            z-index: 10;
+        }
+        @media (min-width: 1280px) { /* Exibe apenas em telas grandes */
+            .timeline-nav {
+                display: block;
+            }
+        }
+        .timeline-nav a {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            color: #4b5563;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+        .timeline-nav a:hover, .timeline-nav a.active {
+            color: #1e40af;
+            font-weight: 700;
+            transform: translateX(5px);
+        }
+        .timeline-nav .icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            transition: all 0.3s ease;
+        }
+        .timeline-nav a:hover .icon, .timeline-nav a.active .icon {
+             background-color: #3b82f6;
+             color: #fff;
+        }
+        .main-content {
+            margin-left: 0;
+        }
+        @media (min-width: 1280px) {
+            .main-content {
+                margin-left: 150px;
+            }
+        }
+        .card-note {
+            background-color: #fefce8; /* Amarelo bem claro */
+            border-left: 4px solid #facc15; /* Amarelo */
+            padding: 0.75rem;
+            margin-top: 0.75rem;
+            font-size: 0.875rem;
+            color: #713f12;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700">
+
+    <!-- Timeline Navigation -->
+    <nav class="timeline-nav" id="timelineNav">
+        <a href="#roma" class="active"><div class="icon">✈️</div><span>Roma</span></a>
+        <a href="#florenca"><div class="icon">🎨</div><span>Florença</span></a>
+        <a href="#veneza"><div class="icon">🛶</div><span>Veneza</span></a>
+        <a href="#berlim"><div class="icon">🏛️</div><span>Berlim</span></a>
+        <a href="#amsterdam"><div class="icon">🚲</div><span>Amsterdã</span></a>
+        <a href="#paris"><div class="icon">🥐</div><span>Paris</span></a>
+        <a href="#custos"><div class="icon">💰</div><span>Custos</span></a>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header class="hero-bg text-white h-[40vh] md:h-[50vh] flex flex-col items-center justify-center text-center p-4">
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight">Roteiro Final Europa</h1>
+        <p class="text-lg md:text-xl mt-4 max-w-2xl">A sua jornada inesquecível pelo Velho Continente, planejada em detalhes.</p>
+    </header>
+
+    <div class="main-content container mx-auto p-4 md:p-8">
+
+        <!-- Seção de Cidades -->
+        <div class="space-y-20">
+
+            <!-- Roma -->
+            <section id="roma">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
+                    <h2 class="text-3xl md:text-4xl font-bold flex items-center gap-4"><img src="https://flagcdn.com/w40/it.png" alt="Bandeira da Itália"> Roma <span class="text-2xl font-normal text-gray-400">(22/07 a 26/07)</span></h2>
+                    <a href="https://www.google.com/maps/d/u/0/edit?mid=1SxKvEubHfGfcVpFv65g7UFdoIr8BGW8&usp=sharing" target="_blank" class="flex items-center gap-2 bg-blue-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Ver no Mapa
+                    </a>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-4 border-b pb-2">22/07 - Partida</h3>
+                        <p class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-blue-500"><path d="M17.8 19.2 16 11l3.5-3.5C21.37 5.63 22 4.88 22 4c0-1.1-.9-2-2-2-1.1 0-2 .9-2 2 0 .88.63 1.63 1.5 1.8L16 11l-1.8-3.2C13.57 6.63 13 5.88 13 5c0-1.1-.9-2-2-2-1.1 0-2 .9-2 2 0 .88.63 1.63 1.5 1.8L12 11l-1.8-3.2C9.57 6.63 9 5.88 9 5c0-1.1-.9-2-2-2-1.1 0-2 .9-2 2 0 .88.63 1.63 1.5 1.8L8 11l-1.8-3.2C5.57 6.63 5 5.88 5 5c0-1.1-.9-2-2-2s-2 .9-2 2c0 .88.63 1.63 1.5 1.8L4.8 19.2"/></svg> Voo de São Paulo (GRU) - 15h30.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-4 border-b pb-2">23/07 - Chegada e Passeio</h3>
+                         <ul class="mt-4 space-y-3">
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg><div><a href="https://www.airbnb.com.br/guest/messages/2097237600" target="_blank" class="attraction-link">Airbnb check-in: 15h</a><p class="text-sm text-gray-500">Via Nicola Marchese, 10</p></div></li>
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><a href="https://www.getyourguide.com/pt-br/booking/5GE5L7LME4Y6W3KGX3KYULL2FGW24FZJ" target="_blank" class="attraction-link">Panteão Fast Track</a><span class="ml-2 text-xs bg-green-100 text-green-800 font-semibold px-2 py-0.5 rounded-full">*Pago</span> (a partir das 17h)</div><div class="card-note">Obs: Trocar o voucher antes.</div></li>
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Fontana di Trevi (9h-21h)</li>
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Trinità dei Monti (10h15–19h45)</li>
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Via del Corso & Piazza Navona</li>
+                        </ul>
+                    </div>
+                     <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-4 border-b pb-2">24/07 - Vaticano e Tour</h3>
+                        <ul class="mt-4 space-y-3">
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Basílica de São Pedro (7h-19h)</li>
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.civitatis.com/pt/roma/free-tour-vaticano/" target="_blank" class="attraction-link">Tour Gratuito - Vaticano</a> (10:00)</li>
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><a href="https://www.getyourguide.com/pt-br/booking/IBMKKW88BBYPHCFKAGGV3BT2OPKO6MLS" target="_blank" class="attraction-link">Museus Vaticano & Capela Sistina</a><span class="ml-2 text-xs bg-green-100 text-green-800 font-semibold px-2 py-0.5 rounded-full">*Pago</span></div><div class="card-note">Obs: Museus abrem 7h, Capela Sistina estar às 8h.</div></li>
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.civitatis.com/pt/roma/free-tour-roma/?aid=11829&cmp=youtuberoma#civGallery" target="_blank" class="attraction-link">Free Tour Roma</a> (19:00)</li>
+                        </ul>
+                    </div>
+                     <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-4 border-b pb-2">25/07 - Roma Antiga</h3>
+                         <ul class="mt-4 space-y-3">
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Trastevere (Bairro)</li>
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><a href="https://www.getyourguide.com/pt-br/booking/QK81TB0JN3A6QMN7XEVRHFM1D9JH8AVV" target="_blank" class="attraction-link">Coliseu, Fórum e Palatino</a><span class="ml-2 text-xs bg-green-100 text-green-800 font-semibold px-2 py-0.5 rounded-full">*Pago</span> (11:25)</div></li>
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><a href="https://www.getyourguide.com/pt-br/booking/QJC1GLAQDKLAXJJ30V3O1O5EKABWCHLZ" target="_blank" class="attraction-link">Fórum e Palatino (Eliana)</a><span class="ml-2 text-xs bg-green-100 text-green-800 font-semibold px-2 py-0.5 rounded-full">*Pago</span></div></li>
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><a href="https://www.getyourguide.com/pt-br/booking/393NO5LSHSHMMKRELQQGWVNA3LXPVBFC" target="_blank" class="attraction-link">Castelo Sant'Angelo</a><span class="ml-2 text-xs bg-green-100 text-green-800 font-semibold px-2 py-0.5 rounded-full">*Pago</span> (16:30)</div></li>
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><a href="https://www.getyourguide.com/pt-br/booking/0PRCHUHZRZ8RMXKPMCAGDYUYRZQJBCVD" target="_blank" class="attraction-link">Castelo Sant'Angelo (Eliana)</a><span class="ml-2 text-xs bg-green-100 text-green-800 font-semibold px-2 py-0.5 rounded-full">*Pago</span> (16:30)</div></li>
+                        </ul>
+                    </div>
+                     <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-4 border-b pb-2">26/07 - Dia Livre</h3>
+                        <p class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-blue-500"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="m11.1 2.9-.9 2.5"/><path d="m20.6 9.2-2.5.9"/><path d="m3.4 9.2 2.5.9"/><path d="m12 22 .9-2.5"/></svg> Dia para decidir o que fazer.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Florença -->
+            <section id="florenca">
+                 <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
+                    <h2 class="text-3xl md:text-4xl font-bold flex items-center gap-4"><img src="https://flagcdn.com/w40/it.png" alt="Bandeira da Itália"> Florença <span class="text-2xl font-normal text-gray-400">(27/07 a 29/07)</span></h2>
+                    <a href="https://www.google.com/maps/d/u/0/edit?mid=1lcKPKKT9H0K_E3KJuEltXcrszWibqNc&usp=sharing" target="_blank" class="flex items-center gap-2 bg-blue-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Ver no Mapa
+                    </a>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                     <div class="bg-blue-50 border border-blue-200 p-6 rounded-xl shadow-lg md:col-span-2 lg:col-span-3">
+                        <h3 class="font-bold text-xl mb-4 border-b border-blue-300 pb-2 text-blue-800">27/07 - Viagem para Florença</h3>
+                        <div class="flex flex-col md:flex-row items-center justify-center text-center gap-4 mt-4">
+                            <span class="font-semibold">Roma</span>
+                            <span class="text-gray-500 text-sm">335km</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-blue-600"><path d="M14 17H9.5a3.5 3.5 0 0 1 0-7h5a3.5 3.5 0 0 0 0-7H6"/><path d="M2 12h1.5"/><path d="M14 12h8"/><path d="m17 9 3 3-3 3"/></svg>
+                            <span class="font-semibold">Pisa</span>
+                             <span class="text-gray-500 text-sm">100km</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-blue-600"><path d="M14 17H9.5a3.5 3.5 0 0 1 0-7h5a3.5 3.5 0 0 0 0-7H6"/><path d="M2 12h1.5"/><path d="M14 12h8"/><path d="m17 9 3 3-3 3"/></svg>
+                             <span class="font-bold text-lg text-blue-800">Florença</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-4 border-b pb-2">27/07 - Chegada e Arte</h3>
+                         <ul class="mt-4 space-y-3">
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg><div><a href="https://www.airbnb.com.br/guest/messages/2063051907" target="_blank" class="attraction-link">Airbnb check-in: 15h</a><p class="text-sm text-gray-500">Via Gino Capponi, 38</p></div></li>
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><a href="https://www.getyourguide.com/pt-br/booking/86TH9M6IZDGSA2ELS9SLHHZRTXXUKCPK" target="_blank" class="attraction-link">Galeria dell Accademia</a><span class="ml-2 text-xs bg-green-100 text-green-800 font-semibold px-2 py-0.5 rounded-full">*Pago</span> (15:30)</div><div class="card-note">Obs: Trocar o voucher antes.</div></li>
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Piazzale Michelangelo (Pôr do sol)</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-4 border-b pb-2">28/07 - Centro Histórico</h3>
+                         <ul class="mt-4 space-y-3">
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Piazza Duomo (Catedral, Cúpula, Portas do Paraíso, Igreja de Santa Cruz)</li>
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Palazzo Vecchio & Ponte Vecchio</li>
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Santa Maria Novella</li>
+                        </ul>
+                    </div>
+                     <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-4 border-b pb-2">29/07 - Uffizi e Viagem</h3>
+                         <ul class="mt-4 space-y-3">
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><a href="https://www.getyourguide.com/pt-br/booking/SD6HMZ927RIJ9BHG59WC6QBVE0M9EOOH" target="_blank" class="attraction-link">Galleria DEGLI UFFIZI</a><span class="ml-2 text-xs bg-green-100 text-green-800 font-semibold px-2 py-0.5 rounded-full">*Pago</span> (9:30)</div><div class="card-note">Obs: Trocar o voucher antes.</div></li>
+                        </ul>
+                    </div>
+                     <div class="bg-blue-50 border border-blue-200 p-6 rounded-xl shadow-lg md:col-span-2 lg:col-span-3">
+                        <h3 class="font-bold text-xl mb-4 border-b border-blue-300 pb-2 text-blue-800">29/07 - Viagem para Veneza</h3>
+                        <div class="flex flex-col md:flex-row items-center justify-center text-center gap-4 mt-4">
+                            <span class="font-semibold">Florença</span>
+                             <span class="text-gray-500 text-sm">120km</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-blue-600"><path d="M14 17H9.5a3.5 3.5 0 0 1 0-7h5a3.5 3.5 0 0 0 0-7H6"/><path d="M2 12h1.5"/><path d="M14 12h8"/><path d="m17 9 3 3-3 3"/></svg>
+                             <span class="font-semibold">Bolonha</span>
+                             <span class="text-gray-500 text-sm">150km</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-blue-600"><path d="M14 17H9.5a3.5 3.5 0 0 1 0-7h5a3.5 3.5 0 0 0 0-7H6"/><path d="M2 12h1.5"/><path d="M14 12h8"/><path d="m17 9 3 3-3 3"/></svg>
+                             <span class="font-semibold">Verona</span>
+                             <span class="text-gray-500 text-sm">120km</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-blue-600"><path d="M14 17H9.5a3.5 3.5 0 0 1 0-7h5a3.5 3.5 0 0 0 0-7H6"/><path d="M2 12h1.5"/><path d="M14 12h8"/><path d="m17 9 3 3-3 3"/></svg>
+                             <span class="font-bold text-lg text-blue-800">Veneza</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Veneza -->
+             <section id="veneza">
+                 <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
+                    <h2 class="text-3xl md:text-4xl font-bold flex items-center gap-4"><img src="https://flagcdn.com/w40/it.png" alt="Bandeira da Itália"> Verona & Veneza <span class="text-2xl font-normal text-gray-400">(29/07 a 01/08)</span></h2>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://www.google.com/maps/d/u/0/edit?mid=1UazfjkQFFCVcfRI5WFU6B7H-PeohU9Y&usp=sharing" target="_blank" class="flex items-center gap-2 bg-blue-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Mapa Verona
+                        </a>
+                        <a href="https://www.google.com/maps/d/u/0/edit?mid=14HXD3UKQq63MREo-LAAje2c1huf8Bmc&usp=sharing" target="_blank" class="flex items-center gap-2 bg-blue-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Mapa Veneza
+                        </a>
+                    </div>
+                </div>
+                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-4 border-b pb-2">29/07 - Verona e Chegada</h3>
+                        <ul class="mt-4 space-y-3">
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><a href="https://www.getyourguide.com/pt-br/booking/428ZK22T6ZAMQLW43ZBETWTDA1DS3MKA" target="_blank" class="attraction-link">Casa de Julieta</a><span class="ml-2 text-xs bg-green-100 text-green-800 font-semibold px-2 py-0.5 rounded-full">*Pago</span> (15:30)</div><div class="card-note">Obs: Trocar o voucher antes.</div></li>
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg><div><a href="https://www.airbnb.com.br/guest/messages/2063045371" target="_blank" class="attraction-link">Airbnb check-in: 14h</a><p class="text-sm text-gray-500">Via Agostino Barbarigo, 15c</p></div></li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-4 border-b pb-2">30/07 - Clássicos de Veneza</h3>
+                        <ul class="mt-4 space-y-3">
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Basílica e Praça de São Marcos</li>
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Ponte Dos Suspiros & Palácio Ducal</li>
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Passeio de Gôndola</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-4 border-b pb-2">31/07 - Exploração e Ópera</h3>
+                        <ul class="mt-4 space-y-3">
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>T Fondaco dei Tedeschi <div class="card-note !p-1 !mt-0">Obs: Agendamento grátis com 21 dias de antecedência.</div></li>
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Rialto Market e explorar a cidade</li>
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><a href="https://www.getyourguide.com/pt-br/booking/HSJCIQW16VPP4FK93QD8Z470FPUM49ME" target="_blank" class="attraction-link">Opera Arena de Verona</a><span class="ml-2 text-xs bg-green-100 text-green-800 font-semibold px-2 py-0.5 rounded-full">*Pago</span></div><div class="card-note">Obs: Trocar Ingresso (18:30-19:20).</div></li>
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><a href="https://www.getyourguide.com/pt-br/booking/XDFY0S5G9F37YF904ZICG182V452DYIJ" target="_blank" class="attraction-link">Opera Arena (Eliana)</a><span class="ml-2 text-xs bg-green-100 text-green-800 font-semibold px-2 py-0.5 rounded-full">*Pago</span></div></li>
+                        </ul>
+                    </div>
+                 </div>
+            </section>
+            
+            <!-- Berlim -->
+             <section id="berlim">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
+                    <h2 class="text-3xl md:text-4xl font-bold flex items-center gap-4"><img src="https://flagcdn.com/w40/de.png" alt="Bandeira da Alemanha"> Berlim <span class="text-2xl font-normal text-gray-400">(01/08 a 04/08)</span></h2>
+                    <a href="https://www.google.com/maps/d/u/0/edit?mid=1mTcsQ9XC6jTc1TNJXiWyD430cX9hO6o&usp=sharing" target="_blank" class="flex items-center gap-2 bg-blue-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Ver no Mapa
+                    </a>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-blue-50 border border-blue-200 p-6 rounded-xl shadow-lg md:col-span-2 lg:col-span-3">
+                        <h3 class="font-bold text-xl mb-4 border-b border-blue-300 pb-2 text-blue-800">01/08 - Viagem para Berlim</h3>
+                        <div class="flex flex-col md:flex-row items-center justify-center text-center gap-4 mt-4">
+                            <span class="font-semibold">Veneza</span>
+                            <span class="text-gray-500 text-sm">Saída: 6:00</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-blue-600"><path d="M17.8 19.2 16 11l3.5-3.5C21.37 5.63 22 4.88 22 4c0-1.1-.9-2-2-2-1.1 0-2 .9-2 2 0 .88.63 1.63 1.5 1.8L16 11l-1.8-3.2C13.57 6.63 13 5.88 13 5c0-1.1-.9-2-2-2-1.1 0-2 .9-2 2 0 .88.63 1.63 1.5 1.8L12 11l-1.8-3.2C9.57 6.63 9 5.88 9 5c0-1.1-.9-2-2-2-1.1 0-2 .9-2 2 0 .88.63 1.63 1.5 1.8L8 11l-1.8-3.2C5.57 6.63 5 5.88 5 5c0-1.1-.9-2-2-2s-2 .9-2 2c0 .88.63 1.63 1.5 1.8L4.8 19.2"/></svg>
+                             <span class="font-bold text-lg text-blue-800">Berlim</span>
+                             <span class="text-gray-500 text-sm">Chegada: 11:20</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-4 border-b pb-2">01/08 - Chegada e História</h3>
+                        <ul class="mt-4 space-y-3">
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M14 17H9.5a3.5 3.5 0 0 1 0-7h5a3.5 3.5 0 0 0 0-7H6"/><path d="M2 12h1.5"/><path d="M14 12h8"/><path d="m17 9 3 3-3 3"/></svg>Retirar Carro Aeroporto (10:00) (Decidir Ainda)</li>
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg><div><a href="https://www.hoteis.com/trips/egti-WF6-89Q-O4OB/details/NjUwOTU1NmEtOTM3ZC01YjM0LTg4Y2MtZTIwMjYwZGU5NWE4Ozk2MzFhNTA5LThjNDktNDgyOC1iNDA2LTQxZjJkZDM5ZTE5NV8wO2VnOnByb3BlcnR5OjUxMDMzNTI0MWFiOTgzMDBiZDU0YTFjZmZhMWFjZDIz" target="_blank" class="attraction-link">Hotel check-in: 15:00</a></div></li>
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Museu Judaico, Siegessäule, Topografia do Terror, Checkpoint Charlie, TrabiWorld Berlin.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-4 border-b pb-2">02/08 - Tours e Museus</h3>
+                        <ul class="mt-4 space-y-3">
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><a href="https://www.civitatis.com/br/berlim/free-tour-berlim/" target="_blank" class="attraction-link">Free Tour Berlin</a> (10:00)</div></li>
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Ilha dos Museus (A decidir)</li>
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M14 17H9.5a3.5 3.5 0 0 1 0-7h5a3.5 3.5 0 0 0 0-7H6"/><path d="M2 12h1.5"/><path d="M14 12h8"/><path d="m17 9 3 3-3 3"/></svg>Devolver Carro (22:00)</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-4 border-b pb-2">03/08 - Vistas e Arte</h3>
+                        <ul class="mt-4 space-y-3">
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Reichstag (15:00) (Decidir Ainda)</li>
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Berliner Fernsehturm, Alexanderplatz</li>
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>East Side Gallery, Dark Matter (Compra Local)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Amsterdam -->
+            <section id="amsterdam">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
+                    <h2 class="text-3xl md:text-4xl font-bold flex items-center gap-4"><img src="https://flagcdn.com/w40/nl.png" alt="Bandeira da Holanda"> Amsterdã <span class="text-2xl font-normal text-gray-400">(04/08 a 06/08)</span></h2>
+                    <a href="https://www.google.com/maps/d/u/0/edit?mid=1_bCuJlOFZfqweqWI3J5C4dh9miwL3Yk&usp=sharing" target="_blank" class="flex items-center gap-2 bg-blue-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Ver no Mapa
+                    </a>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-blue-50 border border-blue-200 p-6 rounded-xl shadow-lg md:col-span-2 lg:col-span-3">
+                        <h3 class="font-bold text-xl mb-4 border-b border-blue-300 pb-2 text-blue-800">04/08 - Viagem para Amsterdã</h3>
+                        <div class="flex flex-col md:flex-row items-center justify-center text-center gap-4 mt-4">
+                            <span class="font-semibold">Berlim</span>
+                            <span class="text-gray-500 text-sm">Saída: 4:59</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-blue-600"><path d="m18 18-3-3-3 3-3-3-3 3-3-3 3-3 3 3 3-3 3 3 3-3-3-3-3 3-3 3zM2 6l3-3 3 3 3-3 3 3 3-3 3 3"/></svg>
+                             <span class="font-bold text-lg text-blue-800">Amsterdã</span>
+                             <span class="text-gray-500 text-sm">Chegada: 11:59</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-4 border-b pb-2">04/08 - Chegada e Noite</h3>
+                         <ul class="mt-4 space-y-3">
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg><div><a href="https://www.hoteis.com/trips/egti-LA7-H4C-6KM3/details/MzgwMzI3ZGUtOTYzZS01ZTk1LWFkNGQtZWY1NzIwN2I4ZjIyOzMxM2EyY2M0LWE0YmYtNDVmYi04NmM2LWUwYzkxMTk1YTUwZF8wO2VnOnByb3BlcnR5Ojc2NjcxODJmYjk0NTA3ODMxZmE1NDZjNTU0YWU2MWI5" target="_blank" class="attraction-link">Hotel check-in: 14:00</a></div></li>
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.annefrank.org/en/museum/tickets/choose-your-ticket/" target="_blank" class="attraction-link">Anne Frank Museu</a> <div class="card-note !p-1 !mt-0">Obs: Comprar dia 23/06.</div></li>
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Red Light District, A'dam Lookout</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-4 border-b pb-2">05/08 - Museus e Cruzeiro</h3>
+                         <ul class="mt-4 space-y-3">
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Rijksmuseum (A decidir) (9:00)</li>
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><a href="https://www.getyourguide.com/pt-br/booking/E9XV75E0F9QFGTC2UFB2R2EAOEM5PBAA" target="_blank" class="attraction-link">Heineken Expirience</a><span class="ml-2 text-xs bg-green-100 text-green-800 font-semibold px-2 py-0.5 rounded-full">*Pago</span> (10:30)</div></li>
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Museu The Upside Down (Compra Local)</li>
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><a href="https://www.getyourguide.com/pt-br/booking/MGDH70H5CESDT8AG0ZZ0WJ1MRZEZD7HI" target="_blank" class="attraction-link">Cruzeiro noturno</a><span class="ml-2 text-xs bg-green-100 text-green-800 font-semibold px-2 py-0.5 rounded-full">*Pago</span> (19:00 - 20:30)</div></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Paris -->
+            <section id="paris">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
+                    <h2 class="text-3xl md:text-4xl font-bold flex items-center gap-4"><img src="https://flagcdn.com/w40/fr.png" alt="Bandeira da França"> Paris <span class="text-2xl font-normal text-gray-400">(06/08 a 10/08)</span></h2>
+                    <a href="https://www.google.com/maps/d/u/0/edit?mid=1rlkQpKyy-Mjos4BNGAQd74iCUE6wmxc&usp=sharing" target="_blank" class="flex items-center gap-2 bg-blue-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Ver no Mapa
+                    </a>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-blue-50 border border-blue-200 p-6 rounded-xl shadow-lg md:col-span-2 lg:col-span-3">
+                        <h3 class="font-bold text-xl mb-4 border-b border-blue-300 pb-2 text-blue-800">06/08 - Viagem para Paris</h3>
+                        <div class="flex flex-col md:flex-row items-center justify-center text-center gap-4 mt-4">
+                            <span class="font-semibold">Amsterdã</span>
+                            <span class="text-gray-500 text-sm">Saída: 11:00</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-blue-600"><path d="m18 18-3-3-3 3-3-3-3 3-3-3 3-3 3 3 3-3 3 3 3-3-3-3-3 3-3 3zM2 6l3-3 3 3 3-3 3 3 3-3 3 3"/></svg>
+                             <span class="font-bold text-lg text-blue-800">Paris</span>
+                             <span class="text-gray-500 text-sm">Chegada: 14:35</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-4 border-b pb-2">06/08 - Chegada</h3>
+                        <ul class="mt-4 space-y-3">
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg><div><a href="https://www.airbnb.com.br/guest/messages/2097248560" target="_blank" class="attraction-link">Airbnb check-in: 15:00</a><p class="text-sm text-gray-500">4 Rue de la Félicité, 75017</p></div></li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-4 border-b pb-2">07/08 - Ícones de Paris</h3>
+                         <ul class="mt-4 space-y-3">
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><a href="https://www.getyourguide.com/pt-br/booking/P293RWQ6XBCM7N2ZNORWQCMOBLE58PPG" target="_blank" class="attraction-link">Concierge + Sainte Chapelle</a><span class="ml-2 text-xs bg-green-100 text-green-800 font-semibold px-2 py-0.5 rounded-full">*Pago</span> (9:00)</div><div class="card-note">Obs: Horário marcado p/ Sainte Chapelle.</div></li>
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><a href="https://www.getyourguide.com/pt-br/booking/SE71TT8NLK0V9RWE8U6DBGNCJK6A7A41" target="_blank" class="attraction-link">Museu do Louvre</a><span class="ml-2 text-xs bg-green-100 text-green-800 font-semibold px-2 py-0.5 rounded-full">*Pago</span> (11:30)</div><div class="card-note">Obs: Não pode atrasar.</div></li>
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://resa.notredamedeparis.fr/en/reservationindividuelle/date" target="_blank" class="attraction-link">Notre Dame</a> (Agendar 5 Dias Antes)</li>
+                            <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Jardim de Luxemburgo</li>
+                         </ul>
+                    </div>
+                     <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-4 border-b pb-2">08/08 - Monumentos</h3>
+                         <ul class="mt-4 space-y-3">
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Torre Eiffel</li>
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Arco do Triunfo, Ópera Garnier (Comprar na hora)</li>
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Place de la Concorde, Ponte Alexandre III</li>
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><a href="https://www.getyourguide.com/pt-br/booking/4PQ0PXAFYL9ZPR54FTULEKCEMWCPZR3O" target="_blank" class="attraction-link">Les invalides</a><span class="ml-2 text-xs bg-green-100 text-green-800 font-semibold px-2 py-0.5 rounded-full">*Pago</span></div></li>
+                         </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-4 border-b pb-2">09/08 - Realeza e Show</h3>
+                         <ul class="mt-4 space-y-3">
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><a href="https://www.getyourguide.com/pt-br/booking/51GSLKFR5C5F95DU6FR8ZMXM4D4VL80W" target="_blank" class="attraction-link">Palácio de Versalhes</a><span class="ml-2 text-xs bg-green-100 text-green-800 font-semibold px-2 py-0.5 rounded-full">*Pago</span> (9:30)</div></li>
+                             <li class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mt-1 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Moulin Rouge</li>
+                         </ul>
+                    </div>
+                     <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="font-bold text-xl mb-4 border-b pb-2">10/08 - Retorno</h3>
+                        <p class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-blue-500"><path d="M17.8 19.2 16 11l3.5-3.5C21.37 5.63 22 4.88 22 4c0-1.1-.9-2-2-2-1.1 0-2 .9-2 2 0 .88.63 1.63 1.5 1.8L16 11l-1.8-3.2C13.57 6.63 13 5.88 13 5c0-1.1-.9-2-2-2-1.1 0-2 .9-2 2 0 .88.63 1.63 1.5 1.8L12 11l-1.8-3.2C9.57 6.63 9 5.88 9 5c0-1.1-.9-2-2-2-1.1 0-2 .9-2 2 0 .88.63 1.63 1.5 1.8L8 11l-1.8-3.2C5.57 6.63 5 5.88 5 5c0-1.1-.9-2-2-2s-2 .9-2 2c0 .88.63 1.63 1.5 1.8L4.8 19.2"/></svg> Voo de Paris (13:00) p/ Guarulhos (20:00).</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Seção de Custos -->
+        <section id="custos" class="mt-20 pt-10 border-t-2 border-gray-200">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">Planilha de Custos</h2>
+            <div class="grid lg:grid-cols-2 gap-12">
+                
+                <!-- Custos de Acomodação -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-6 text-center">Alojamento (5 Pessoas)</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left">
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th class="p-4 font-semibold">Cidade</th>
+                                    <th class="p-4 font-semibold text-right">Total</th>
+                                    <th class="p-4 font-semibold text-right">Por Pessoa</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr class="hover:bg-gray-50"><td class="p-4">Roma</td><td class="p-4 text-right">R$ 4.567,45</td><td class="p-4 text-right">R$ 761,24</td></tr>
+                                <tr class="hover:bg-gray-50"><td class="p-4">Florença</td><td class="p-4 text-right">R$ 2.780,00</td><td class="p-4 text-right">R$ 463,33</td></tr>
+                                <tr class="hover:bg-gray-50"><td class="p-4">Veneza</td><td class="p-4 text-right">R$ 3.000,00</td><td class="p-4 text-right">R$ 500,00</td></tr>
+                                <tr class="hover:bg-gray-50"><td class="p-4">Berlim</td><td class="p-4 text-right">R$ 2.457,60</td><td class="p-4 text-right">R$ 409,60</td></tr>
+                                <tr class="hover:bg-gray-50"><td class="p-4">Amsterdã</td><td class="p-4 text-right">R$ 3.158,70</td><td class="p-4 text-right">R$ 526,45</td></tr>
+                                <tr class="hover:bg-gray-50"><td class="p-4">Paris</td><td class="p-4 text-right">R$ 6.444,38</td><td class="p-4 text-right">R$ 1.074,00</td></tr>
+                                <tr class="bg-gray-200 font-bold"><td class="p-4">Total</td><td class="p-4 text-right">R$ 22.408,13</td><td class="p-4 text-right">R$ 3.734,62</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Outros Custos -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-6 text-center">Transporte & Passeios (Total)</h3>
+                     <div class="overflow-x-auto">
+                        <table class="w-full text-left">
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th class="p-4 font-semibold">Item</th>
+                                    <th class="p-4 font-semibold text-right">Valor</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr class="hover:bg-gray-50"><td class="p-4">Voo São Paulo → Roma</td><td class="p-4 text-right">R$ 16.700,00</td></tr>
+                                <tr class="hover:bg-gray-50"><td class="p-4">Voo Veneza → Berlim</td><td class="p-4 text-right">R$ 6.500,00</td></tr>
+                                <tr class="hover:bg-gray-50"><td class="p-4">Trem Berlim → Amsterdã</td><td class="p-4 text-right">R$ 2.300,00</td></tr>
+                                <tr class="hover:bg-gray-50"><td class="p-4">Trem Amsterdã → Paris</td><td class="p-4 text-right">R$ 1.050,00</td></tr>
+                                <tr class="hover:bg-gray-50"><td class="p-4">Voo Paris → São Paulo</td><td class="p-4 text-right">R$ 13.500,00</td></tr>
+                                <tr class="hover:bg-gray-50"><td class="p-4">Passeios Itália</td><td class="p-4 text-right">R$ 7.371,00</td></tr>
+                                <tr class="hover:bg-gray-50"><td class="p-4">Passeios Berlim</td><td class="p-4 text-right">R$ 2.180,00</td></tr>
+                                <tr class="hover:bg-gray-50"><td class="p-4">Passeios Amsterdã</td><td class="p-4 text-right">R$ 4.190,00</td></tr>
+                                <tr class="hover:bg-gray-50"><td class="p-4">Passeios Paris</td><td class="p-4 text-right">R$ 3.610,00</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center mt-20 py-8 border-t-2 border-gray-200">
+            <p class="text-gray-500">Boa viagem!</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.timeline-nav a');
+
+        const activateLinkOnScroll = () => {
+            let index = sections.length;
+            while(--index && window.scrollY + 150 < sections[index].offsetTop) {}
+            
+            navLinks.forEach((link) => link.classList.remove('active'));
+            const activeLink = document.querySelector(`.timeline-nav a[href="#${sections[index].id}"]`);
+            if (activeLink) {
+                activeLink.classList.add('active');
+            }
+        };
+
+        window.addEventListener('scroll', activateLinkOnScroll);
+        activateLinkOnScroll();
+    </script>
+</body>
+</html>
